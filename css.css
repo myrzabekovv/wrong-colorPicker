@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #ddd;
+}
+
+.wrapper {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px 30px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+}
+.color:focus {
+  outline: none;
+}
+.color:hover {
+  transform: translateY(1px);
+  transition: all 0.2s;
+}
+
+.active {
+  box-shadow: 0 0 0 4px #000;
+  transition: all 0.2s;
+}
